@@ -1,10 +1,7 @@
 
 # Go_app_for_exercise
-An app created by Chatgpt for people to practice Go.
+An app created by Chatgpt-5.6&6 for people to practice Go.
 =======
-# 弈境 · 围棋研习
-
-简洁古风的围棋练习与人机对弈程序。题库界面只保留带标准变化的练习；人机部分使用本地 KataGo，不需要联网。启动时会显示约 3–4 秒的水墨手谈加载页，同时等待引擎就绪。
 
 ## 启动
 
@@ -42,15 +39,10 @@ An app created by Chatgpt for people to practice Go.
 
 顶部右侧按钮可以在简体中文与 English 界面之间切换，语言选择保存在本地浏览器中。
 
-## 棋盘与规则
-
-支持提子、自杀判定、全局同形禁止（positional superko）、停一手、悔棋、双停后的死子标记和数子结算。AI 查询失败时界面提供重试，不会偷偷换成随机引擎。
 
 ## KataGo
 
 程序包含官方 KataGo v1.16.4 Eigen Windows x64 CPU 引擎、`kata1-b6c96-s69427456-d10051148` 网络权重和 Human SL 人类棋谱模型。服务只监听 `127.0.0.1`，通过 Analysis JSON 协议查询；详情和许可证见 `SOURCES.md` 及 `engine/LICENSE`。
 
-## 验证
 
-在开发目录运行 `node --test test.cjs` 可验证围棋规则、420 道标准答案路径、请求校验和数据完整性。设置 `$env:LIVE_TEST='1'` 后再运行，可额外验证真实 KataGo。
 
